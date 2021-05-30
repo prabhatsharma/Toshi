@@ -1,4 +1,5 @@
-FROM rust:slim-buster AS builder
+FROM public.ecr.aws/prima/rust:1.52.1-2
+# FROM rust:slim-buster AS builder
 
 RUN apt-get update 
 RUN apt-get install -y pkg-config libssl-dev
